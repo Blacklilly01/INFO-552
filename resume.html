@@ -1,163 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover how Blacklilly Grows</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #c39bd3;
-    }
-
-    header {
-      background-color: #212f3c;
-      color: #229954;
-      padding: 2em 0;
-      text-align: center;
-      font-size: 1.5em;
-    }
-
-    nav {
-      background-color: #eb984e;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav a {
-      color: white;
-      padding: 1em;
-      text-decoration: none;
-      display: block;
-    }
-
-    nav a:hover {
-      background-color: #aed6f1;
-    }
-
-    .content {
-      padding: 2em;
-      text-align: center;
-    }
-
-    .content img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      margin-top: 1em;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      margin-top: 2em;
-    }
-  </style>
-</head>
-<style>
-.column
-{
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-.column.side {
-  width: 25%;
-  color:aqua
-}
-.column.middle {
-  width: 70%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-
-  <style>
- .topnav {
-  overflow: hidden;
-  background-color: #eb984e;
-}
-.topnav a {
-  float: left;
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 12px 14px;
-    text-decoration: none;
-}
-.topnav a:hover {
-  background-color: #aed6f1;
-  color:#212f3c
-}
-</style>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="associations.html">Associations</a></li>
-    <li><a href="resume.html">Resume</a></li>
-  </ul>
-</nav>
-<head>
-    <style>
-      .center-text {
-        text-align: center;
-        font-size: 2em;
-        color: #01080f;
-
-      }
-    </style>
-  </head>
-
-
-  <div class="content">
-    <h2>Resume</h2>
-      
-  </div>
-
- 
-</body>
-</html>
-
-  <title>My Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Najla Rashad - Resume</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 2em;
       background-color: #f9f9f9;
       color: #333;
+    }
+
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #e8daef;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    .sidebar a.active {
+      background-color: #04AA6D;
+      color: #d35400;
+    }
+
+    .sidebar a:hover:not(.active) {
+      background-color: #fdebd0;
+      color: #884ea0;
+    }
+
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+      padding-bottom: 80px; /* Space for fixed footer */
     }
 
     header {
       text-align: center;
       margin-bottom: 2em;
-    }
-
-    h1 {
-      margin: 0;
     }
 
     .section {
       margin-bottom: 2em;
     }
 
+    h1, h2 {
+      margin: 0;
+    }
+
     h2 {
       border-bottom: 2px solid #555;
       padding-bottom: 0.5em;
+      margin-bottom: 1em;
     }
 
     ul {
@@ -166,7 +69,7 @@
     }
 
     li {
-      margin-bottom: 0.5em;
+      margin-bottom: 1em;
     }
 
     .contact {
@@ -175,59 +78,73 @@
     }
 
     footer {
+      background-color: #333;
+      color: white;
       text-align: center;
-      margin-top: 3em;
-      font-size: 0.85em;
-      color: #82e0aa;
+      padding: 15px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Najla Rashad</h1>
-    <p class="contact">Email: nrashad2003@yahoo.com | Phone: (267)266-3566 | Philadelphia, PA</p>
-  </header>
-
-  
-  <div class="section">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Library Trainee</strong>, Free Library of Philadelphia — February 2024–Present<br>Developing knowledge and skills in the principles, practices, objectives, and techniques of library science. Providing training
-on the layout and resources of the library, as well as the effective use of library facilities. Assisting patrons in locating library
-materials and providing information about books, authors, and reference resources. Compiling book lists, cataloging, and
-managing book orders. Planning programs for the Teens and Children’s departments. Conducting outreach to local
-community centers, schools, and childcare facilities.</li>
-      <li><strong>Library Assistant 2</strong>, Free Library of Philadelphia— September 2019–February 2024<br>Provided assistance to the public with circulation and borrowing procedures, as well as reference inquiries. Executed clerical
-tasks related to processing materials and managing automated systems. Supported patrons in using public computers,
-personal laptops, e-readers, and other technical resources. Performed responsibilities including shelving organization, repair,
-sorting, dispatching, and filing of library materials. Participated in cataloging and acquisition activities. Served as a lead
-worker with supervisory responsibilities. Contributed to planning and coordination of adult/teen and children’s programs.
-- Contributed to project planning for adult and children’s programs.</li>
-    </ul>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="associations.html">Associations</a>
+    <a href="resume.html" class="active">Resume</a>
   </div>
 
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Master Library Information Science </strong>, Drexel University — 2024-Present</li>
-      <li><strong>Bacherlor of Arts Liberal Studies/Leadership Track</strong>, Pierce College -2022</li>
-      <li><strong>Associat of Arts Early Childhood Education</strong>, Community College of Philadelphia</li>
-    </ul>
+  <!-- Main Content -->
+  <div class="content">
+    <header>
+      <h1>Najla Rashad</h1>
+      <p class="contact">Email: nrashad2003@yahoo.com | Phone: (267) 266-3566 | Philadelphia, PA</p>
+    </header>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <strong>Library Trainee</strong>, Free Library of Philadelphia — Feb 2024–Present<br>
+          Developing knowledge and skills in library science. Assisting patrons, cataloging, planning teen and children’s programs, and conducting outreach to schools and community centers.
+        </li>
+        <li>
+          <strong>Library Assistant 2</strong>, Free Library of Philadelphia — Sep 2019–Feb 2024<br>
+          Assisted public with circulation and reference, supported technology use, performed cataloging and clerical tasks, helped plan programs, and supervised junior staff.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Master of Library & Information Science</strong>, Drexel University — 2024–Present</li>
+        <li><strong>Bachelor of Arts, Liberal Studies (Leadership Track)</strong>, Peirce College — 2022</li>
+        <li><strong>Associate of Arts, Early Childhood Education</strong>, Community College of Philadelphia</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Awards & Certifications</h2>
+      <ul>
+        <li>City of Philadelphia Chamber of Commerce Paradigm Scholarship for Working Women — 2021</li>
+        <li>Transforming Teen Services PA Library Staff Academy — Certificate of Completion</li>
+        <li>SEAL: Social, Emotional, and Literacy Training — New Beginnings, 2012</li>
+        <li>Library Management Systems Training</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="section">
-    <h2>Awards</h2>
-    <ul>
-      <li>City of Philadelphia Chamber of Commerce Pradigm for Working Women Scholarship Recipient, 2021</li>
-      <li>Certificate of Completion Transforming Teen Services PA Library Staff Academy</li>
-      <li>Certificate of Completion for Social, Emotional, and Literacy (SEAL) New Beginnings, 2012</li>
-      <li>Library Management Systems</li>
-    </ul>
-  </div>
-
+  <!-- Footer -->
   <footer>
-     2025 The Blacklilly Project
+    &copy; 2025 Najla Rashad Portfolio. All rights reserved.
   </footer>
 
 </body>

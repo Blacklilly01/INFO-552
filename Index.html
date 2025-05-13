@@ -3,142 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover how Blacklilly Grows</title>
   <style>
-    body {
-      margin: 0;
-      background-color: #c39bd3;
-    }
-
-    header {
-      background-color: #212f3c;
-      color: #229954;
-      padding: 2em 0;
-      text-align: center;
-      font-size: 1.5em;
-    }
-
-    nav {
-      background-color: #eb984e;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav a {
-      color: white;
-      padding: 1em;
-      text-decoration: none;
-      display: block;
-    }
-
-    nav a:hover {
-      background-color: #aed6f1;
-    }
-
-    .content {
-      padding: 2em;
-      text-align: center;
-    }
-
-    .content img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      margin-top: 1em;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      margin-top: 2em;
-    }
-  </style>
-</head>
-<style>
-.column
-{
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-.column.side {
-  width: 25%;
-  color:aqua
-}
-.column.middle {
-  width: 70%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-
-  <style>
- .topnav {
-  overflow: hidden;
-  background-color: #eb984e;
-}
-.topnav a {
-  float: left;
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 12px 14px;
-    text-decoration: none;
-}
-.topnav a:hover {
-  background-color: #aed6f1;
-  color:#212f3c
-}
-</style>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="associations.html">Associations</a></li>
-    <li><a href="resume.html">Resume</a></li>
-  </ul>
-</nav>
-<head>
-    <style>
-      .center-text {
-        text-align: center;
-        font-size: 2em;
-        color: #01080f;
-
-      }
-    </style>
-  </head>
-
-
-
+  ul {list-style-type:none;
+  margin: 0;
+  background-color:yellow;
+  border: 1px solid #070707;
+  height: 100%;
+  position: fixed;}
+ </style>
+ </head>
+ <style>
+ 
+    .sidebar {
+     margin: 0;
+     padding: 0;
+     width: 200px;
+     background-color: #e8daef ;
+     position: fixed;
+     height: 100%;
+     overflow: auto;
+     }
+     .sidebar a {
+     display: block;
+     padding: 16px;
+     text-decoration: none;
+     }
+     .sidebar a.active {
+     background-color: #04AA6D;
+     color:  #d35400;
+     }
+     .sidebar a:hover:not(.active) {
+     background-color: #fdebd0;
+     color: #884ea0;
+     }
+     div.content {
+     margin-left: 200px;
+     padding: 1px 16px;
+     height: 1000px;
+     }
+     </style>
+     <body>
+     <div class="sidebar">
+      <a href="index.html">Home</a></li>
+      <a href="about.html">About</a></li>
+      <a href="projects.html">Projects</a></li>
+      <a href="associations.html">Associations</a></li>
+      <a href="resume.html">Resume</a></li>
+      </div>
+      </body>
+     
+     
+  
   <div class="content">
     <h2>Home</h2>
   
     <p>I am student at Drexel University studying to become a librarian in the MLIS program.</p>
-    <p>I am advocate for learning and creating learning opportunities for people. I believe if given a fair chance everyone can succeed in their lives, careers, or within their personal selves.</p> 
-    <P> As a librarian it is my desire to support, respect, and strive to foster an environment that promotes encouragement, diversity, and curiosity.</p>
-    <p>As I pursues my career as a librarian  I truly believe that my challenges are powerful opportunities for growth—I see them as the catalysts that forge resilience within me, fueling my journey of continuous professional and personal development, With heartfelt empathy toward others. I embraces every obstacle with passion and courage, knowing that each one brings me closer to becoming my best self. Check out my highlights and my growth as a person and as a professional</p>
-    
-    
-    <img src="me.jpeg">
+    <h1>My Purpose</h1>
+    <p>Is to advocate for learning and creating learning opportunities for people. I believe if given a fair chance everyone can succeed in their lives, careers, or within their personal selves. As a librarian it is my desire to support, respect, and strive to foster an environment that promotes encouragement, diversity, and curiosity.</p>
+   <h2>My Philosophy</h2>
+    <p>As I pursue my career as a librarian, I believe that every challenge is a powerful opportunity for growth. These moments of difficulty serve as catalysts that build resilience within me and fuel my journey of continuous professional and personal development.
+
+      With heartfelt empathy toward others, I embrace each obstacle with passion and courage—knowing that every step forward brings me closer to becoming the best version of myself. My mission is to support, uplift, and create inclusive spaces that foster curiosity, learning, and opportunity for all.
+    </p>
+    <img src="me.jpeg"width="300"height="200">
   </div>
 
-  <footer>
-     2025 The Blacklilly Project. 
+
+
+  
+    <style>
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+     <footer>
+    &copy; 2025 Najla Rashad Portfolio. All rights reserved.
   </footer>
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px; 
+}
+
+.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  padding-bottom: 60px;
+}
 
 </body>
 </html>
+  

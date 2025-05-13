@@ -1,152 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover how Blacklilly Grows</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Associations - Najla Rashad</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #c39bd3;
     }
 
-    header {
-      background-color: #212f3c;
-      color: #229954;
-      padding: 2em 0;
-      text-align: center;
-      font-size: 1.5em;
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #e8daef;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
     }
 
-    nav {
-      background-color: #eb984e;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav a {
-      color: white;
-      padding: 1em;
-      text-decoration: none;
+    .sidebar a {
       display: block;
+      padding: 16px;
+      text-decoration: none;
+      color: #000;
     }
 
-    nav a:hover {
-      background-color: #aed6f1;
+    .sidebar a.active {
+      background-color: #04aa6d;
+      color: #d35400;
+    }
+
+    .sidebar a:hover:not(.active) {
+      background-color: #fdebd0;
+      color: #884ea0;
     }
 
     .content {
-      padding: 2em;
-      text-align: center;
-    }
-
-    .content img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      margin-top: 1em;
-      border-radius: 10px;
+      margin-left: 200px;
+      padding: 20px;
+      padding-bottom: 80px; /* space for footer */
     }
 
     footer {
-      background-color: #111;
+      background-color: #333;
       color: white;
       text-align: center;
-      padding: 1em 0;
-      position: relative;
+      padding: 10px 0;
+      position: fixed;
       bottom: 0;
       width: 100%;
-      margin-top: 2em;
+    }
+
+    h2, h3 {
+      color: #5a2a83;
     }
   </style>
 </head>
-<style>
-.column
-{
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-.column.side {
-  width: 25%;
-  color:aqua
-}
-.column.middle {
-  width: 70%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
 
-  <style>
- .topnav {
-  overflow: hidden;
-  background-color: #eb984e;
-}
-.topnav a {
-  float: left;
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 12px 14px;
-    text-decoration: none;
-}
-.topnav a:hover {
-  background-color: #aed6f1;
-  color:#212f3c
-}
-</style>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="associations.html">Associations</a></li>
-    <li><a href="resume.html">Resume</a></li>
-  </ul>
-</nav>
-<head>
-    <style>
-      .center-text {
-        text-align: center;
-        font-size: 2em;
-        color: #01080f;
+<body>
 
-      }
-    </style>
-  </head>
+  <div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="associations.html" class="active">Associations</a>
+    <a href="resume.html">Resume</a>
+  </div>
 
+  <div class="content"> 
+    <h2>Associations</h2>  
 
+    <h3>American Library Association (ALA)</h3>
+    <p>
+      I am a student member of the American Library Association (ALA), the largest librarian organization in the world, dating back to the 1800s. 
+      ALA advocates for librarians and libraries, and promotes the rights to education, literacy, and intellectual freedom.
+    </p>
+    <a href="https://www.ala.org/" target="_blank">Visit ALA</a><br><br>
 
-  <div class="content">
-    <h2>Associations</h2>   
-        <p>American Libary Association</p>
-        <p>I'm a student member of The American Library Association (ALA) which the largest librarian organizaiton in the world that dates back to the 1800's. The organization advocates for librarians and libraries. The organization also promote rights to education, literacy, and intellectual freedom.</p>
-        <a href="https://www.ala.org/" target="_blank">Visit ALA</a><br>
-        
-        <p>Association for Women In Science</p>
-        <p>I am a member of The Association for Women in Science (AWIS) It is a national organization. I am a member of the Philadelphia chapter. The organization advocates for change To ensure that all women in science and STEM related fields can achieve their
-            full potential, our advocacy work focuses on achieving positive system transformation,
-            equitable workplaces, and recognition of women’s scientific and leadership achievements.</p>
-            <p>AWIS allowed me to share my journey in their quaterly publication. Please check it out</p>
-            <a href="https://www.awis.org/" target="_blank">Visit AWIS</a>
-            <a href="https://awis.org/awismagazine/" target="_blank">AWIS Magazine</a></p><br>
-            <p>Pennsylvania Black Librarians Caucus</p> 
-            <p>I am also a student member of the Pennsylvania Black Librarian Caucus (PaBLC) which was established in 2020.The PaBLC's mission is to recruit by building the profression of librarianship through education and career opportunities.</p>
-            <a href="https://www.pablc.org/" target="_blank">Visit PaBLC</a><br>
-         <p>Black Caucus American Library Association</p>
-         <p>I am a new member of teh Black Caucus American Library Association (BCALA). The organization is celebrating 50 years of service advocating for the development, promotion, and improvement of library services. Additionally  providing resources to African American communities across the United States, recruitment, and professional development of African American Librarians.</p>
-         <a href="https://www.bcala.org/" taraget="_blank">Visit BCALA</a>
-        
-         <footer>
-            2025 The Blacklilly Project
-         </footer>
-       
-       </body>
-       </html>
+    <h3>Association for Women in Science (AWIS)</h3>
+    <p>
+      I am a member of the Association for Women in Science (AWIS), a national organization with a local Philadelphia chapter. 
+      AWIS advocates for systemic change to ensure that all women in science and STEM-related fields can achieve their full potential. 
+      Their work focuses on equity in the workplace and the recognition of women’s scientific and leadership achievements.
+    </p>
+    <p>
+      AWIS gave me the opportunity to share my journey in their quarterly publication. Please check it out:
+    </p>
+    <a href="https://www.awis.org/" target="_blank">Visit AWIS</a> |
+    <a href="https://awis.org/awismagazine/" target="_blank">AWIS Magazine</a><br><br>
+
+    <h3>Pennsylvania Black Librarians Caucus (PaBLC)</h3>
+    <p>
+      I am a student member of the Pennsylvania Black Librarians Caucus (PaBLC), established in 2020. 
+      PaBLC's mission is to grow and strengthen the profession of librarianship by promoting education, career development, and recruitment efforts within Black communities.
+    </p>
+    <a href="https://www.pablc.org/" target="_blank">Visit PaBLC</a><br><br>
+
+    <h3>Black Caucus of the American Library Association (BCALA)</h3>
+    <p>
+      I am a new member of the Black Caucus of the American Library Association (BCALA). 
+      For over 50 years, BCALA has been advocating for the development, promotion, and improvement of library services and resources for African American communities across the United States, 
+      while also supporting the professional development of African American librarians.
+    </p>
+    <a href="https://www.bcala.org/" target="_blank">Visit BCALA</a>
+  </div>
+
+  <footer>
+    &copy; 2025 The Blacklilly Project
+  </footer>
+
+</body>
+</html>

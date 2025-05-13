@@ -1,128 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover how Blacklilly Grows</title>
   <style>
-    body {
-      margin: 0;
-      background-color: #c39bd3;
-    }
-
-    header {
-      background-color: #212f3c;
-      color: #229954;
-      padding: 2em 0;
-      text-align: center;
-      font-size: 1.5em;
-    }
-
-    nav {
-      background-color: #eb984e;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav a {
-      color: white;
-      padding: 1em;
-      text-decoration: none;
-      display: block;
-    }
-
-    nav a:hover {
-      background-color: #aed6f1;
-    }
-
-    .content {
-      padding: 2em;
-      text-align: center;
-    }
-
-    .content img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      margin-top: 1em;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      margin-top: 2em;
-    }
-  </style>
-</head>
-<style>
-.column
-{
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-.column.side {
-  width: 25%;
-  color:aqua
-}
-.column.middle {
-  width: 70%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-
-  <style>
- .topnav {
-  overflow: hidden;
-  background-color: #eb984e;
-}
-.topnav a {
-  float: left;
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 12px 14px;
-    text-decoration: none;
-}
-.topnav a:hover {
-  background-color: #aed6f1;
-  color:#212f3c
-}
-</style>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="associations.html">Associations</a></li>
-    <li><a href="resume.html">Resume</a></li>
-  </ul>
-</nav>
-<head>
-    <style>
-      .center-text {
-        text-align: center;
-        font-size: 2em;
-        color: #01080f;
-
-      }
-    </style>
-  </head>
-
-
+  ul {list-style-type:none;
+  margin: 0;
+  background-color:yellow;
+  border: 1px solid #070707;
+  height: 100%;
+  position: fixed;}
+ </style>
+ </head>
+ <style>
+ 
+    .sidebar {
+     margin: 0;
+     padding: 0;
+     width: 200px;
+     background-color: #e8daef ;
+     position: fixed;
+     height: 100%;
+     overflow: auto;
+     }
+     .sidebar a {
+     display: block;
+     padding: 16px;
+     text-decoration: none;
+     }
+     .sidebar a.active {
+     background-color: #04AA6D;
+     color:  #d35400;
+     }
+     .sidebar a:hover:not(.active) {
+     background-color: #fdebd0;
+     color: #884ea0;
+     }
+     div.content {
+     margin-left: 200px;
+     padding: 1px 16px;
+     height: 1000px;
+     }
+     </style>
+     <body>
+     <div class="sidebar">
+      <a href="index.html">Home</a></li>
+      <a href="about.html">About</a></li>
+      <a href="projects.html">Projects</a></li>
+      <a href="associations.html">Associations</a></li>
+      <a href="resume.html">Resume</a></li>
+      </div>
+      </body>
 
   <div class="content">
     <h2>Projects</h2>
