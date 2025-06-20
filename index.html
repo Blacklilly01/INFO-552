@@ -1,113 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archiving Community</title>
-    <style>
-        .topnav {
-            overflow: hidden;
-            background-color: #221d1a;
-        }
-        .topnav a {
-            float: left;
-            display: block;
-            color: goldenrod;
-            text-align: center;
-            padding: 12px 14px;
-            text-decoration: bold;
-        }
-        .topnav a:hover {
-            background-color: rgb(245, 193, 174);
-            color: #212f3c;
-        }
-        .column {
-            float: left;
-            width: 50%;
-            padding: 10px;
-        }
-        .row::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-            }
-          
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Najla Rashad Portfolio</title>
 
-        }
-    </style>
-</head>
-<body> 
-    <div class="topnav">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 
-        <a href="#home">Home</a>
-        <a href="#history-of-germantown">History of Germantown</a>
-        <a href="#wyck-house">WYCK House</a>
-        <a href="#germantown-historical-society">Germantown Historical Society</a>
-        <a href="#concord-schoolhouse">Concord Schoolhouse</a>
-        <a href="#lest-we-forget-museum">Lest We Forget Museum of Slavery</a>
-        <a href="#cliveden">Cliveden</a>
-        <a href="#events-and-exhibitions">Events and Exhibitions</a> 
-       
-       
-    <img src="images\logo.jpeg" alt="Archiving Community Logo" width="100" style="vertical-align: middle;">
-        </a>
-    </div>
-<head>
-    <h1 style="text-align: center;">Welcome to Germantown Archiving Community</h1>
-    <title>Archiving Community</title>
-    <style>
-        .intro-text {
-            text-align: center;
-            font-size: 25px;
-            line-height: 1.4;
-            width: 70vh;
-            margin-bottom: 50px;
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #bcaaa4;    }
 
-        }
-          
-        .row {display:flex; justify-content:space-between;
-        }
-        img.battleimage {
-            width: 400px;
-            height: auto;
-            max-width: 500px;
-            border-radius: 10px;
-        }
-        
-    </style>
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #4e342e;
+      position: fixed;
+      height: 100vh;
+      overflow: auto;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #ff7043;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: lavenderblush;
+    }
+
+    /* Main content wrapper */
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: white;
+      padding: 60px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      text-align: center;
+      animation: fadeIn 1.8s ease;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: #3e3e3e;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    section {
+      margin-bottom: 60px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      color: #4a235a;
+      font-family: 'Playfair Display', serif;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive layout */
+    @media screen and (max-width: 600px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .sidebar a {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 10px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="row">
-        <div class="column intro-text">
-            <p>The place where archiving and community come together.
-            We are dedicated to preserving the rich history of Germantown, Philadelphia.
-            We provide a platform for community members to discover stories, artifacts, and experiences.
-            We believe that everyone has a story to tell, and we are here to help you discover stories untold or forgotten.
-            </p>   
-            <p> This website benefits historical enthusiast, historians, archivist and people who are interested in the local history of Germantown as well as those who are seekers of family history and lineage.</p> 
-        </div>
-        <div class="battleimagebox"><img class="battle_image" src="C:\Users\rashadn\Desktop\Web_Portfolio\Community_Website\images\battle.jpg" alt=""></div>
-    </div>
-    
-    <style>
-        .footer {
-            background-color: black;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            color: goldenrod;
-        }
-        </style>
-        <body>
-            <div class="footer">
-                <p>Germantown Archiving Community. All rights reserved.</p>
-            </div>
 
-</body>
-</html>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#associations">Associations</a>
+    <a href="#resume">Resume</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <section id="home" class="hero">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Explore my professional journey in librarianship and information science. Here, you will find an overview of my experience, key projects, and career development as an emerging information professional
+    </section>
+
+  <section id="about">
+  <h2>About</h2>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+    <img src="C:\Users\rashadn\Desktop\portfolio\me.JPEG" alt="Najla Rashad photo" style="width: 215px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+    <p style="flex: 1; min-width: 250px;">
+My name is Najla Rashad, and I am currently pursuing a Master of Library and Information Science (MLIS) degree at Drexel University. Through my coursework and field experiences, I am building a strong foundation in librarianship and information science. I also serve as a Library Trainee at the Free Library of Philadelphia, where I gain hands-on experience in public service, community engagement, and daily library operations. I am deeply committed to equitable access to information, digital archiving, and the evolving role of libraries as inclusive, community-centered spaces. My academic and professional journey has been shaped by meaningful projects, specialized training, and real-world practice that align with these core values.</p>
+
+    </div>
+</section>
+
+    <section id="projects">
+  <h2>Projects</h2>
+  <p>
+    Explore examples of my projects that include digitization efforts, metadata creation, website development for community history, and digital storytelling initiatives. These projects reflect my interest in preserving cultural memory, improving access to archival materials, and using technology to serve diverse communities.
+  </p>
+  <p>Course: Resources for Young Adults</p>
+    <p>Created a Drupal-based website featuring book reviews and podcasts focused on teen literature. The site includes curated content across a variety of genres such as classic teen fiction, non-fiction, biography, graphic novels, teen TV show adaptations, and LGBTQ+ literature. The project emphasized content organization, audience engagement, and digital presentation tailored for young adult readers.</p>
+    <a href="https://www.sites.google.com/view/byalr/about-me/" target="_blank">Click here to view the project</a><br>
+
+  <p>Course: Web-Design</p>
+   <p>Built a website with HTML Coding and CSS Styling</p>
+  <a href="https://community3.netlify.app/" target="_blank">Click here to view the Community3 project</a><br>
+
+<p>Community Archiving Event</p>
+<p>As part of a collaborative effort with fellow librarians, I co-led a community archiving initiative at our local neighborhood library, titled "Germantown Community Archiving: Let's Make Histories." Designed to encourage storytelling and the preservation of personal and community histories, the event brought together historical organizations from Germantown, Philadelphia, who shared artifacts and curated displays. Community members were invited to digitize personal documents and explore archival microfilm for research. The initiative was featured in Drexel University’s College of Computing & Informatics (CCI) publication and stands as a highlight in my commitment to accessible, community-driven historical preservation.</p>
+<a href="https://drexel.edu/cci/stories/mslis-drexel-dragons-in-germantown-an-archiving-initiative/"target="_blank">Click here to view the article</a><br>
+ 
+</section>
+
+<section id="associations">
+  <h2>Associations</h2>
+  <p>
+  <div class="content"> 
+
+    <h3>American Library Association (ALA)</h3>
+    <p>
+      I am a student member of the American Library Association (ALA), the largest librarian organization in the world, dating back to the 1800s. 
+      ALA advocates for librarians and libraries, and promotes the rights to education, literacy, and intellectual freedom.
+    </p>
+    <a href="https://www.ala.org/" target="_blank">Visit ALA</a><br><br>
+
+    <h3>Association for Women in Science (AWIS)</h3>
+    <p>
+      I am a member of the Association for Women in Science (AWIS), a national organization with a local Philadelphia chapter. 
+      AWIS advocates for systemic change to ensure that all women in science and STEM-related fields can achieve their full potential. 
+      Their work focuses on equity in the workplace and the recognition of women’s scientific and leadership achievements.
+    </p>
+    <p>
+      AWIS gave me the opportunity to share my journey in their quarterly publication. Please check it out:
+    </p>
+    <a href="https://www.awis.org/" target="_blank">Visit AWIS</a> |
+    <a href="https://awis.org/resource/discovering-the-magic-of-library-science/" target="_blank">AWIS Magazine</a><br><br>
+
+    <h3>Pennsylvania Black Librarians Caucus (PaBLC)</h3>
+    <p>
+      I am a student member of the Pennsylvania Black Librarians Caucus (PaBLC), established in 2020. 
+      PaBLC's mission is to grow and strengthen the profession of librarianship by promoting education, career development, and recruitment efforts within Black communities.
+    </p>
+    <a href="https://www.pablc.org/" target="_blank">Visit PaBLC</a><br><br>
+
+    <h3>Black Caucus of the American Library Association (BCALA)</h3>
+    <p>
+      I am a new member of the Black Caucus of the American Library Association (BCALA). 
+      For over 50 years, BCALA has been advocating for the development, promotion, and improvement of library services and resources for African American communities across the United States, 
+      while also supporting the professional development of African American librarians.
+    </p>
+    <a href="https://www.bcala.org/" target="_blank">Visit BCALA</a>
+  </div>
+  </p>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p>
+    You can download my resume <a href="NAJLA%20A.pdf" target="_blank" style="color: #4e342e; font-weight: bold;">here</a>. It provides a detailed overview of my academic background, professional experiences, and technical skills in library and information science.
+  </p>
+</section>
+<!-- Footer -->
+<footer style="background-color: #4e342e; color: white; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%;">
+  <p style="margin: 8px 0;">&copy; 2025 Najla A. Rashad | All rights reserved</p>
+  <p style="margin: 8px 0;">
+    <a href="mailto:nrashad2003@yahoo.com" style="color: #ffab91; margin-right: 15px;">Email Me</a>
+    <a href="https://www.linkedin.com/in/najla-rashad-5a3303229/" target="_blank" style="color: #ffab91;">LinkedIn</a>
+  </p>
+  <button onclick="scrollToTop()" style="margin-top: 10px; padding: 8px 16px; border: none; border-radius: 5px; background-color: #ff7043; color: white; cursor: pointer;">
+    ↑ Back to Top
+  </button>
+</footer>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
